@@ -1,4 +1,4 @@
-import VisibilityFilters from '../actions'
+import { VisibilityFilters } from '../actions/index.js'
 
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
   switch (action.type) {
@@ -8,5 +8,5 @@ const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
       return state
   }
 }
-​
+
 export default visibilityFilter
